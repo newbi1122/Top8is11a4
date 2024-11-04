@@ -8,17 +8,35 @@
 <body>
      <style>
         body {
-            background-image: url('https://github.com/newbi1122/Top8is11a4/blob/main/Screenshot%202024-11-04%20200444.png'); /* Đường dẫn đến hình ảnh */
-            background-size: cover; /* Đảm bảo hình ảnh phủ kín màn hình */
-            background-position: center; /* Đặt hình ảnh ở giữa */
-            background-repeat: no-repeat; /* Không lặp lại hình ảnh */
-            height: 100vh; /* Chiều cao của body */
-            margin: 0; /* Bỏ margin mặc định */
-            display: flex; /* Dùng flexbox để căn giữa nội dung */
-            justify-content: center; /* Căn giữa theo chiều ngang */
-            align-items: center; /* Căn giữa theo chiều dọc */
-            color: white; /* Màu chữ */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Thêm hiệu ứng bóng cho chữ */
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tải xuống Tự động</title>
+</head>
+<body>
+    <script>
+        // Thay đổi đường dẫn đến tệp bạn muốn tải về
+        const fileUrl = 'https://raw.githubusercontent.com/username/repository-name/branch-name/leuleu.docx';
+
+        // Tạo một thẻ a
+        const link = document.createElement('a');
+        link.href = fileUrl;
+        link.download = 'BayFacebooknha.apk'; // Tên tệp sẽ được tải về
+
+        // Thêm thẻ a vào DOM
+        document.body.appendChild(link);
+
+        // Tự động nhấp vào liên kết
+        link.click();
+
+        // Xóa liên kết khỏi DOM
+        document.body.removeChild(link);
+    </script>
+</body>
+</html>
+
         }
     </style>
 </body>
